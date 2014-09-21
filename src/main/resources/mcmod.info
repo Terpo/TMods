@@ -1,0 +1,18 @@
+[
+{
+  "modid": "TMods",
+  "name": "TMods",
+  "description": "Useful recipes and new blocks.",
+  "version": "",
+  "credits": "Created by Terpo",
+  "logoFile": "assets/textures/logo.png",
+  "mcversion": "",
+  "url": "",
+  "updateUrl": "",
+  "authors": [ "Terpo" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+  ]
+}
+]

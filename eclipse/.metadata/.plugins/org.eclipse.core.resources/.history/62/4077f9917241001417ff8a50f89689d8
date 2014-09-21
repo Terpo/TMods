@@ -1,0 +1,16 @@
+package org.terpo.tmods;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid="TMods",name="TMods", version="1.7.10-1.0")
+
+public class Tmods {
+	
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event){
+	
+	}
+
+}
