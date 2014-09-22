@@ -1,0 +1,46 @@
+package org.terpo.tmods.handler;
+
+import java.io.File;
+
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.common.config.Configuration;
+
+public class ConfigurationHandler {
+
+	public static Configuration configuration;
+	
+	public static void init(File configFile){
+		
+		//create configuration object from configuration file
+		configuration = new Configuration(configFile);
+		
+		boolean configValue = false;
+		
+		try
+		{
+			//load configuration file
+			configuration.load();
+			
+			//load properties
+			configValue = configuration.get("MyFirstCat", "configValue", true, "Commentary").getBoolean();
+
+		}
+		catch(Exception e)
+		{
+			//log the exception 
+		}
+		finally
+		{
+			//save the configuration file
+			if(configuration.hasChanged())
+				configuration.save();
+		}
+		
+		
+	}
+	
+	public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
+	{
+		
+	}
+}

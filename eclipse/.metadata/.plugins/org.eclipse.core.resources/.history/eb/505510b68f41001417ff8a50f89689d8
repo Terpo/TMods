@@ -1,0 +1,7 @@
+package org.terpo.tmods.item;
+
+import net.minecraft.item.Item;
+
+public class ItemWrapper extends Item {
+
+}

@@ -1,0 +1,14 @@
+package org.terpo.tmods.item;
+
+import org.terpo.tmods.creativetab.CreativeTabTMods;
+import org.terpo.tmods.reference.ItemReference;
+
+
+public class ItemPaperShovel extends ItemWrapperTMods {
+
+	public ItemPaperShovel(){
+		super();
+		this.setUnlocalizedName(ItemReference.PAPER_SHOVEL);
+		this.setCreativeTab(CreativeTabTMods.TMods_TAB);
+	}
+}

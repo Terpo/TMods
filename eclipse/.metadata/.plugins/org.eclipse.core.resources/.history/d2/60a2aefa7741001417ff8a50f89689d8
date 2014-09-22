@@ -1,0 +1,5 @@
+package org.terpo.tmods.proxy;
+
+public class CommonProxy implements IProxy{
+
+}

@@ -1,0 +1,9 @@
+package org.terpo.tmods.item;
+
+
+public class ItemTest extends ItemWrapper {
+
+	public ItemTest(){
+		super();
+	}
+}

@@ -1,0 +1,15 @@
+package org.terpo.tmods.init;
+
+import org.terpo.tmods.item.ItemPaperShovel;
+import org.terpo.tmods.item.ItemWrapperTMods;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+
+	public static final ItemWrapperTMods paperShovel = new ItemPaperShovel();
+	
+	public static void init(){
+		GameRegistry.registerItem(paperShovel, "PaperShovel");
+	}
+	
+}

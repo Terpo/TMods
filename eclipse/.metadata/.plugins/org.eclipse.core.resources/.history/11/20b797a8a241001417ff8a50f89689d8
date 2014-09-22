@@ -1,0 +1,17 @@
+package org.terpo.tmods.init;
+
+
+
+import org.terpo.tmods.block.BlockStamper;
+import org.terpo.tmods.block.BlockWrapperTMods;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModBlocks {
+
+	public static final BlockWrapperTMods stamper = new BlockStamper();
+	
+	public static void init(){
+		GameRegistry.registerBlock(stamper, "Stamper");
+	}
+}

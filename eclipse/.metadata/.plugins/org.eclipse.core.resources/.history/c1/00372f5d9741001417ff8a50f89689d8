@@ -1,0 +1,10 @@
+package org.terpo.tmods.item;
+
+
+public class ItemPaperShovel extends ItemWrapperTMods {
+
+	public ItemPaperShovel(){
+		super();
+		this.setUnlocalizedName("Paper-Shovel");
+	}
+}

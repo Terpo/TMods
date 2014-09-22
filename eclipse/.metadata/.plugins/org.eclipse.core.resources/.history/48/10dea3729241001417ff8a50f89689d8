@@ -1,0 +1,9 @@
+package org.terpo.tmods.item;
+
+
+public class ItemPaperShovel extends ItemWrapper {
+
+	public ItemPaperShovel(){
+		super();
+	}
+}

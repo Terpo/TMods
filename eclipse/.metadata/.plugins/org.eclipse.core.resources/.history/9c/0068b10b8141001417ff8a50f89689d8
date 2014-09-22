@@ -1,0 +1,30 @@
+package org.terpo.tmods.configuration;
+
+import java.io.File;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class ConfigurationHandler {
+	public static void init(File configFile){
+		
+		//create configuration object from configuration file
+		Configuration configuration = new Configuration(configFile);
+		
+		try
+		{
+			//load configuration file
+			configuration.load();
+			
+			//load properties
+		}
+		catch(Exception e)
+		{
+			//log the exception 
+		}
+		finally
+		{
+			//save the configuration file
+			configuration.save();
+		}
+	}
+}
