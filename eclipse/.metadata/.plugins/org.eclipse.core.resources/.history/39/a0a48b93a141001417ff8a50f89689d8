@@ -1,8 +1,0 @@
-package org.terpo.tmods.block;
-
-public class BlockStamper extends BlockWrapperTMods {
-	public BlockStamper(){
-		super();
-		this.setBlockName()
-	}
-}

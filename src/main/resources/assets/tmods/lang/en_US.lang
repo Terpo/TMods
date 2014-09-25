@@ -1,0 +1,18 @@
+# Keys
+#keys.tmods.category=Terpos Mod
+#keys.tmods.charge=Charge
+#keys.tmods.release=Release
+key.categories.tmods=Terpos Mod
+key.charge=Charge
+key.release=Release
+
+# Creative Tabs
+itemGroup.tmods=Terpos Mod
+
+# Items
+item.tmods:paperShovel.name=Paper Shovel
+item.tmods:quartzMortar.name=Quartz Mortar
+item.tmods:pulverizedClay.name=Pulverized Clay
+
+# Blocks
+tile.tmods:stamper.name=Stamper

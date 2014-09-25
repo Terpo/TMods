@@ -1,9 +1,0 @@
-package org.terpo.tmods.init;
-
-import org.terpo.tmods.item.ItemPaperShovel;
-import org.terpo.tmods.item.ItemWrapperTMods;
-
-public interface ModItems {
-
-	public static final ItemWrapperTMods paperShovel = new ItemPaperShovel();
-}

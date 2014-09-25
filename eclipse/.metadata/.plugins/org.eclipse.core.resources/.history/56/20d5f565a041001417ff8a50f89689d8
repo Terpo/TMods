@@ -1,7 +1,0 @@
-package org.terpo.tmods.block;
-
-public class BlockWrapperTMods extends Block(){
-	public Block(Material material){
-		super(material);
-	}
-}
