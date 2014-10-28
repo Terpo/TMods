@@ -3,6 +3,7 @@ package org.terpo.tmods;
 import org.terpo.tmods.client.handler.KeyInputEventHandler;
 import org.terpo.tmods.handler.ConfigurationHandler;
 import org.terpo.tmods.handler.CraftingHandler;
+import org.terpo.tmods.init.IMC;
 import org.terpo.tmods.init.ModBlocks;
 import org.terpo.tmods.init.ModItems;
 import org.terpo.tmods.init.Recipes;
@@ -40,6 +41,7 @@ public class TMods
 		
 		ModItems.init();
 		ModBlocks.init();
+		
 	}
 
 	@Mod.EventHandler
@@ -50,6 +52,10 @@ public class TMods
 		// GUIS, TEs, Recipes
 		Recipes.init();
 		
+		// Initialize mod tile entities
+        proxy.registerTileEntities();
+        proxy.registerNetworkStuff();
+       // IMC.init();
 	}
 
 	@Mod.EventHandler

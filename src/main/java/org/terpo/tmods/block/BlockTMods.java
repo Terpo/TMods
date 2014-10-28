@@ -16,11 +16,12 @@ public class BlockTMods extends Block
 	{
 		super(material);
 		this.setCreativeTab(CreativeTabTMods.TMods_TAB);
+		this.setResistance(6.0F);
 	}
 
 	public BlockTMods()
 	{
-		this(Material.rock);
+		this(Material.iron);
 	}
 
 	@Override

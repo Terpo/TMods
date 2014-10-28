@@ -16,7 +16,7 @@ import cpw.mods.fml.common.gameevent.PlayerEvent.ItemCraftedEvent;
 public class CraftingHandler 
 {
 
-	@SubscribeEvent
+/*	@SubscribeEvent
     public void onItemCraftedEvent(PlayerEvent.ItemCraftedEvent event)
     {
         if (event.crafting.getItem() instanceof ItemPulverizedClay)
@@ -33,5 +33,5 @@ public class CraftingHandler
         	 }
         }
     }
-	
+	*/
 }

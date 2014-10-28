@@ -30,6 +30,13 @@ public class ItemTMods extends Item
 	@Override
 	public String getUnlocalizedName(ItemStack itemStack)
 	{
+		//LogHelper.info("######## ITEM ########");
+		//LogHelper.info(super.getUnlocalizedName());
+		//LogHelper.info(getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+		//LogHelper.info(String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":",
+		//		getUnwrappedUnlocalizedName(super.getUnlocalizedName())));
+		//LogHelper.info("######## ITEMEND ########");
+		
 		return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":",
 				getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
 	}

@@ -17,4 +17,11 @@ public class ClientProxy extends CommonProxy
 		ClientRegistry.registerKeyBinding(KeyBindings.release);
 	}
 
+	@Override
+	public void registerNetworkStuff()
+	{
+		// NOOP
+		
+	}
+
 }

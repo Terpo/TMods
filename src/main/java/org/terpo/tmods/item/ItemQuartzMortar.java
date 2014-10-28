@@ -15,19 +15,17 @@ public class ItemQuartzMortar extends ItemTMods
 		super();
 		this.setUnlocalizedName(Names.Items.QUARTZ_MORTAR);
 		this.maxStackSize = 1;
-		this.setMaxDamage(16);
-		
+		this.setMaxDamage(15);
 	}
-	
-    @Override
-    public boolean getShareTag()
-    {
-        return true;
-    }
 
 	@Override
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack stack){
 		return false;
+	}
+	
+	@Override
+	public boolean hasContainerItem(ItemStack stack){
+		return true;
 	}
 	
 	@Override
