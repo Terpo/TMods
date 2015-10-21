@@ -17,6 +17,6 @@ public class ItemDoorGlass extends ItemTModsDoors
 		super();
 		this.maxStackSize = 16;
 		setUnlocalizedName(Names.Items.DOORGLASSITEM);
-		this.blockDoor = ModBlocks.doorGlassBlock;
+		this.blockDoor = ModBlocks.doorGlass;
 	}   
 }

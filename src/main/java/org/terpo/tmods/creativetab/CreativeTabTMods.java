@@ -15,16 +15,17 @@ public class CreativeTabTMods
 														@Override
 														public Item getTabIconItem()
 														{
+															
 															// returns a item,
 															// item become
 															// symbol
-															return ModItems.paperShovel;
+															return ModItems.pulverizedClay;
 														}
 
 														@Override
 														public String getTranslatedTabLabel()
 														{
-															return "Terpos Mods";
+															return Reference.MOD_NAME;
 
 														}
 													};

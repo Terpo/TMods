@@ -11,7 +11,7 @@ import org.terpo.tmods.reference.Names;
 
 public class ItemTModsDoors extends ItemTMods
 {
-		public Block blockDoor = ModBlocks.doorGlassBlock;
+		public Block blockDoor = ModBlocks.doorGlass;
 		
 		public ItemTModsDoors(){
 			super();

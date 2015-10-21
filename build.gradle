@@ -17,12 +17,12 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0"
+version = "1.7.10-1.0.2"
 group= "org.terpo.tmods" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "TMods"
 
 minecraft {
-    version = "1.7.10-10.13.0.1207"
+    version = "1.7.10-10.13.4.1448-1.7.10"
 }
 
 dependencies {

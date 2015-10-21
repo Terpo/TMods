@@ -245,11 +245,6 @@ public class TileEntityStamper extends TileEntityTMods implements ISidedInventor
 					return 500;
 			}
 
-			if (item == ModItems.paperShovel)
-			{
-				return 1600;
-			}
-
 			if (item instanceof ItemTool && ((ItemTool) item).getToolMaterialName().equals("EMERALD"))
 			{
 				return 300;

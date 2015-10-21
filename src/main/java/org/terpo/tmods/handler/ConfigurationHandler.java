@@ -12,8 +12,9 @@ public class ConfigurationHandler
 {
 
 	public static Configuration	configuration;
-	public static boolean		configValue	= false;
-
+	public static boolean		enableStamper	= true;
+	public static boolean		enableStamperRecipe	= true;
+	
 	public static void init(File configFile)
 	{
 
@@ -40,9 +41,10 @@ public class ConfigurationHandler
 	private static void loadConfiguration()
 	{
 
-		configValue = configuration.getBoolean("configValue",
-				Configuration.CATEGORY_GENERAL, true, "Commentary");
-
+		enableStamper = configuration.getBoolean("enableStamper",
+				Configuration.CATEGORY_GENERAL, true, "Disables the Stamper completly if false.");
+		enableStamperRecipe = configuration.getBoolean("enableStamperRecipe",
+				Configuration.CATEGORY_GENERAL, true, "Disables the crafting recipe of the Stamper if false.");
 		if (configuration.hasChanged())
 			configuration.save();
 

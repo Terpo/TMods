@@ -1,10 +1,14 @@
 package org.terpo.tmods.item;
 
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockColored;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
@@ -27,7 +31,7 @@ public class ItemDoorGlassStained extends ItemTModsDoors
 		super();
 		this.maxStackSize = 16;
 		setUnlocalizedName(Names.Items.DOORGLASSSTAINEDITEM);
-		this.blockDoor = ModBlocks.doorGlassStainedWhiteBlock;
+		this.blockDoor = ModBlocks.doorGlassStainedWhite;
 		this.setHasSubtypes(true);
 	}
 
@@ -150,22 +154,22 @@ public class ItemDoorGlassStained extends ItemTModsDoors
             
             switch(itemStack.getItemDamage())
             {
-            	case 0 : this.blockDoor = ModBlocks.doorGlassStainedWhiteBlock; break;
-            	case 1 : this.blockDoor = ModBlocks.doorGlassStainedOrangeBlock; break;
-            	case 2 : this.blockDoor = ModBlocks.doorGlassStainedMagentaBlock; break;
-            	case 3 : this.blockDoor = ModBlocks.doorGlassStainedLightBlueBlock; break;
-            	case 4 : this.blockDoor = ModBlocks.doorGlassStainedYellowBlock; break;
-            	case 5 : this.blockDoor = ModBlocks.doorGlassStainedLightGreenBlock; break;
-            	case 6 : this.blockDoor = ModBlocks.doorGlassStainedPinkBlock; break;
-            	case 7 : this.blockDoor = ModBlocks.doorGlassStainedDarkGrayBlock; break;
-            	case 8 : this.blockDoor = ModBlocks.doorGlassStainedLightGrayBlock; break;
-            	case 9 : this.blockDoor = ModBlocks.doorGlassStainedCyanBlock; break;
-            	case 10 : this.blockDoor = ModBlocks.doorGlassStainedPurpleBlock; break;
-            	case 11 : this.blockDoor = ModBlocks.doorGlassStainedBlueBlock; break;
-            	case 12 : this.blockDoor = ModBlocks.doorGlassStainedBrownBlock; break;
-            	case 13 : this.blockDoor = ModBlocks.doorGlassStainedGreenBlock; break;
-            	case 14 : this.blockDoor = ModBlocks.doorGlassStainedRedBlock; break;
-            	case 15 : this.blockDoor = ModBlocks.doorGlassStainedBlackBlock; break;
+            	case 0 : this.blockDoor = ModBlocks.doorGlassStainedWhite; break;
+            	case 1 : this.blockDoor = ModBlocks.doorGlassStainedOrange; break;
+            	case 2 : this.blockDoor = ModBlocks.doorGlassStainedMagenta; break;
+            	case 3 : this.blockDoor = ModBlocks.doorGlassStainedLightBlue; break;
+            	case 4 : this.blockDoor = ModBlocks.doorGlassStainedYellow; break;
+            	case 5 : this.blockDoor = ModBlocks.doorGlassStainedLightGreen; break;
+            	case 6 : this.blockDoor = ModBlocks.doorGlassStainedPink; break;
+            	case 7 : this.blockDoor = ModBlocks.doorGlassStainedDarkGray; break;
+            	case 8 : this.blockDoor = ModBlocks.doorGlassStainedLightGray; break;
+            	case 9 : this.blockDoor = ModBlocks.doorGlassStainedCyan; break;
+            	case 10 : this.blockDoor = ModBlocks.doorGlassStainedPurple; break;
+            	case 11 : this.blockDoor = ModBlocks.doorGlassStainedBlue; break;
+            	case 12 : this.blockDoor = ModBlocks.doorGlassStainedBrown; break;
+            	case 13 : this.blockDoor = ModBlocks.doorGlassStainedGreen; break;
+            	case 14 : this.blockDoor = ModBlocks.doorGlassStainedRed; break;
+            	case 15 : this.blockDoor = ModBlocks.doorGlassStainedBlack; break;
             	default : this.blockDoor = Blocks.wooden_door; break;
             }
             if (player.canPlayerEdit(x, y, z, side, itemStack) && player.canPlayerEdit(x, y + 1, z, side, itemStack))
@@ -209,4 +213,12 @@ public class ItemDoorGlassStained extends ItemTModsDoors
     {
         return this.dooricon[meta];
     }
+    
+
+	@Override
+	public void getSubItems (Item id, CreativeTabs tab, List list)
+	{
+		for (int i = 0; i < Names.Colors.COLORS.length; i++)
+			list.add(new ItemStack(id, 1, i));
+	}
 }

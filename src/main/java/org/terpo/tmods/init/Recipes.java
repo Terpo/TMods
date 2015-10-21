@@ -1,6 +1,7 @@
 package org.terpo.tmods.init;
 
 
+import org.terpo.tmods.handler.ConfigurationHandler;
 import org.terpo.tmods.reference.Names;
 
 import cofh.api.modhelpers.ThermalExpansionHelper;
@@ -41,7 +42,7 @@ public class Recipes
 		 * Clay processing
 		 #################*/
 		
-		//manuel
+		//manual
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.pulverizedClay, 4), "blockStainedHardenedClay",new ItemStack(ModItems.quartzMortar,1,OreDictionary.WILDCARD_VALUE)));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pulverizedClay, 4),new ItemStack(Blocks.hardened_clay),new ItemStack(ModItems.quartzMortar,1,OreDictionary.WILDCARD_VALUE));		
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.clay_ball,4), new ItemStack(ModItems.pulverizedClay), new ItemStack(ModItems.pulverizedClay), new ItemStack(ModItems.pulverizedClay), new ItemStack(ModItems.pulverizedClay), new ItemStack(Items.water_bucket));
@@ -56,14 +57,15 @@ public class Recipes
 		 #####################*/
 		
 		//Stamper
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.stamper), new ItemStack(ModItems.paperShovel), new ItemStack(ModItems.paperShovel));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.stamper), "logWood","blockClayHardened"));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.stamper), "logWood","blockClayHardened"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.stamper),"wpw","pgp","wpw",'g', "gearIron",'w', "plankWood",'p',new ItemStack(Blocks.piston)));
+		//GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.stamper), new ItemStack(ModItems.paperShovel), new ItemStack(ModItems.paperShovel));
+		//GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.stamper), "logWood","blockClayHardened"));
+		//GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.stamper), "logWood","blockClayHardened"));
+		if(ConfigurationHandler.enableStamperRecipe)
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.stamper),"wpw","pgp","wpw",'g', "gearIron",'w', "plankWood",'p',new ItemStack(Blocks.piston)));
 		
 		
 		//Paper Shovel
-		GameRegistry.addRecipe(new ItemStack(ModItems.paperShovel)," s "," t "," t ",'s', new ItemStack(Items.paper),'t', new ItemStack(Items.stick));
+		//GameRegistry.addRecipe(new ItemStack(ModItems.paperShovel)," s "," t "," t ",'s', new ItemStack(Items.paper),'t', new ItemStack(Items.stick));
 		
 		//Quartz Mortar
 		GameRegistry.addRecipe(new ItemStack(ModItems.quartzMortar),"  t","sqs","sss",'s', new ItemStack(Blocks.stone),'t', new ItemStack(Items.stick),'q', new ItemStack(Items.quartz));
